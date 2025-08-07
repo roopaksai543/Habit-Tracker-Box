@@ -147,5 +147,5 @@ Once the software is uploaded and your hardware is fully assembled, you can buil
 
 [Inspiration](inspiration/README.md)
 
-[Project Evolution and Changelog](projectEvolutionAndChangelog/README.md)
+[Project Evolution and Changelog](projectEvolutionAndChangeLog/README.md)
 
