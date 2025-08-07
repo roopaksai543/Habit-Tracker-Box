@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habit Tracker Box - Code Download</title>
+  <style>
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Habit Tracker Box - Code Download</h1>
+  <form id="codeForm">
+    
+    
+    <p>* If you are tracking fewer than five habits, leave the remaining habit name fields blank. Please fill them out in order from top to bottom. </p>
+    <p>* Option named "Once Is Enough" will allow you to set one or two days in a week that a goal should be completed by. The associated button</p> 
+    <p>  should be pressed before the designated goal days or the display will say "__ days late".</p>
+    <p>* Option named "Weekly Quota" will allow you to set one day in a week that a goal can be completed by as many times as you decide. You have</p> 
+    <p>  the choice to set the number of times you want to complete the goal in a week. The system will automatically reset the counter at the end</p> 
+    <p>  of the week.</p> 
+    <br>
+    
+    <h3>Habit 1 (0x27)</h3>
+
+    <p>Select an option</p>
+
+    <label>
+      <input type="radio" name="habitOptionH1" value="option1" onclick=showOption('1one')>Once Is Enough
+    </label>
+    <br>
+  
+    <label>
+      <input type="radio" name="habitOptionH1" value="option2" onclick=showOption('1two')>Weekly Quota
+    </label>
+    <br><br>
+  
+    <div id="optionOneH1" class="hidden">
+      <strong>You selected "Once Is Enough"</strong>
+
+      <br><br>
+      
+      <label for="habit">Habit Name:</label>
+      <input type="text" id="habitName11"><br><br>
+
+      <div id="sectionOfCheckBoxes11">
+        <label><input type="checkbox" class="checkBoxes11" value = 0 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes11')">Sun</label>
+        <label><input type="checkbox" class="checkBoxes11" value = 1 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes11')">Mon</label>
+        <label><input type="checkbox" class="checkBoxes11" value = 2 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes11')">Tue</label>
+        <label><input type="checkbox" class="checkBoxes11" value = 3 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes11')">Wed</label>
+        <label><input type="checkbox" class="checkBoxes11" value = 4 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes11')">Thurs</label>
+        <label><input type="checkbox" class="checkBoxes11" value = 5 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes11')">Fri</label>
+        <label><input type="checkbox" class="checkBoxes11" value = 6 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes11')">Sat</label>
+      </div>
+    
+      <br><br>
+    </div>
+  
+    <div id="optionTwoH1" class="hidden">
+      <strong>You selected "Weekly Quota"</strong>
+
+      <br><br>
+
+      <label for="habit">Habit Name:</label>
+      <input type="text" id="habitName12"><br><br>
+
+      <label for="habit">Number of times per week: </label>
+      <input type="text" id="timesPerWeek12"><br><br>
+  
+      <div id="sectionOfCheckBoxes12">
+        <label><input type="checkbox" class="checkBoxes12" value = 0 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes12')">Sun</label>
+        <label><input type="checkbox" class="checkBoxes12" value = 1 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes12')">Mon</label>
+        <label><input type="checkbox" class="checkBoxes12" value = 2 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes12')">Tue</label>
+        <label><input type="checkbox" class="checkBoxes12" value = 3 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes12')">Wed</label>
+        <label><input type="checkbox" class="checkBoxes12" value = 4 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes12')">Thurs</label>
+        <label><input type="checkbox" class="checkBoxes12" value = 5 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes12')">Fri</label>
+        <label><input type="checkbox" class="checkBoxes12" value = 6 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes12')">Sat</label>
+      </div>
+
+      <br><br>
+      
+    </div>
+
+    <h3>Habit 2 (0x26)</h3>
+
+    <p>Select an option</p>
+
+    <label>
+      <input type="radio" name="habitOptionH2" value="option1" onclick=showOption('2one')>Once Is Enough
+    </label>
+    <br>
+  
+    <label>
+      <input type="radio" name="habitOptionH2" value="option2" onclick=showOption('2two')>Weekly Quota
+    </label>
+    <br><br>
+  
+    <div id="optionOneH2" class="hidden">
+      <strong>You selected "Once Is Enough"</strong>
+
+      <br><br>
+      
+      <label for="habit">Habit Name:</label>
+      <input type="text" id="habitName21"><br><br>
+
+      <div id="sectionOfCheckBoxes21">
+        <label><input type="checkbox" class="checkBoxes21" value = 0 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes21')">Sun</label>
+        <label><input type="checkbox" class="checkBoxes21" value = 1 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes21')">Mon</label>
+        <label><input type="checkbox" class="checkBoxes21" value = 2 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes21')">Tue</label>
+        <label><input type="checkbox" class="checkBoxes21" value = 3 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes21')">Wed</label>
+        <label><input type="checkbox" class="checkBoxes21" value = 4 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes21')">Thurs</label>
+        <label><input type="checkbox" class="checkBoxes21" value = 5 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes21')">Fri</label>
+        <label><input type="checkbox" class="checkBoxes21" value = 6 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes21')">Sat</label>
+      </div>
+    
+      <br><br>
+    </div>
+  
+    <div id="optionTwoH2" class="hidden">
+      <strong>You selected "Weekly Quota"</strong>
+
+      <br><br>
+
+      <label for="habit">Habit Name:</label>
+      <input type="text" id="habitName22"><br><br>
+
+      <label for="habit">Number of times per week: </label>
+      <input type="text" id="timesPerWeek22"><br><br>
+  
+      <div id="sectionOfCheckBoxes22">
+        <label><input type="checkbox" class="checkBoxes22" value = 0 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes22')">Sun</label>
+        <label><input type="checkbox" class="checkBoxes22" value = 1 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes22')">Mon</label>
+        <label><input type="checkbox" class="checkBoxes22" value = 2 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes22')">Tue</label>
+        <label><input type="checkbox" class="checkBoxes22" value = 3 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes22')">Wed</label>
+        <label><input type="checkbox" class="checkBoxes22" value = 4 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes22')">Thurs</label>
+        <label><input type="checkbox" class="checkBoxes22" value = 5 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes22')">Fri</label>
+        <label><input type="checkbox" class="checkBoxes22" value = 6 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes22')">Sat</label>
+      </div>
+
+      <br><br>
+      
+    </div>
+
+    <h3>Habit 3 (0x25)</h3>
+
+    <p>Select an option</p>
+
+    <label>
+      <input type="radio" name="habitOptionH3" value="option1" onclick=showOption('3one')>Once Is Enough
+    </label>
+    <br>
+  
+    <label>
+      <input type="radio" name="habitOptionH3" value="option2" onclick=showOption('3two')>Weekly Quota
+    </label>
+    <br><br>
+  
+    <div id="optionOneH3" class="hidden">
+      <strong>You selected "Once Is Enough"</strong>
+
+      <br><br>
+      
+      <label for="habit">Habit Name:</label>
+      <input type="text" id="habitName31"><br><br>
+
+      <div id="sectionOfCheckBoxes31">
+        <label><input type="checkbox" class="checkBoxes31" value = 0 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes31')">Sun</label>
+        <label><input type="checkbox" class="checkBoxes31" value = 1 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes31')">Mon</label>
+        <label><input type="checkbox" class="checkBoxes31" value = 2 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes31')">Tue</label>
+        <label><input type="checkbox" class="checkBoxes31" value = 3 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes31')">Wed</label>
+        <label><input type="checkbox" class="checkBoxes31" value = 4 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes31')">Thurs</label>
+        <label><input type="checkbox" class="checkBoxes31" value = 5 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes31')">Fri</label>
+        <label><input type="checkbox" class="checkBoxes31" value = 6 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes31')">Sat</label>
+      </div>
+    
+      <br><br>
+    </div>
+  
+    <div id="optionTwoH3" class="hidden">
+      <strong>You selected "Weekly Quota"</strong>
+
+      <br><br>
+
+      <label for="habit">Habit Name:</label>
+      <input type="text" id="habitName32"><br><br>
+
+      <label for="habit">Number of times per week: </label>
+      <input type="text" id="timesPerWeek32"><br><br>
+  
+      <div id="sectionOfCheckBoxes32">
+        <label><input type="checkbox" class="checkBoxes32" value = 0 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes32')">Sun</label>
+        <label><input type="checkbox" class="checkBoxes32" value = 1 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes32')">Mon</label>
+        <label><input type="checkbox" class="checkBoxes32" value = 2 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes32')">Tue</label>
+        <label><input type="checkbox" class="checkBoxes32" value = 3 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes32')">Wed</label>
+        <label><input type="checkbox" class="checkBoxes32" value = 4 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes32')">Thurs</label>
+        <label><input type="checkbox" class="checkBoxes32" value = 5 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes32')">Fri</label>
+        <label><input type="checkbox" class="checkBoxes32" value = 6 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes32')">Sat</label>
+      </div>
+
+      <br><br>
+      
+    </div>
+    
+    <h3>Habit 4 (0x24)</h3>
+
+    <p>Select an option</p>
+
+    <label>
+      <input type="radio" name="habitOptionH4" value="option1" onclick=showOption('4one')>Once Is Enough
+    </label>
+    <br>
+  
+    <label>
+      <input type="radio" name="habitOptionH4" value="option2" onclick=showOption('4two')>Weekly Quota
+    </label>
+    <br><br>
+  
+    <div id="optionOneH4" class="hidden">
+      <strong>You selected "Once Is Enough"</strong>
+
+      <br><br>
+      
+      <label for="habit">Habit Name:</label>
+      <input type="text" id="habitName41"><br><br>
+
+      <div id="sectionOfCheckBoxes41">
+        <label><input type="checkbox" class="checkBoxes41" value = 0 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes41')">Sun</label>
+        <label><input type="checkbox" class="checkBoxes41" value = 1 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes41')">Mon</label>
+        <label><input type="checkbox" class="checkBoxes41" value = 2 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes41')">Tue</label>
+        <label><input type="checkbox" class="checkBoxes41" value = 3 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes41')">Wed</label>
+        <label><input type="checkbox" class="checkBoxes41" value = 4 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes41')">Thurs</label>
+        <label><input type="checkbox" class="checkBoxes41" value = 5 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes41')">Fri</label>
+        <label><input type="checkbox" class="checkBoxes41" value = 6 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes41')">Sat</label>
+      </div>
+    
+      <br><br>
+    </div>
+  
+    <div id="optionTwoH4" class="hidden">
+      <strong>You selected "Weekly Quota"</strong>
+
+      <br><br>
+
+      <label for="habit">Habit Name:</label>
+      <input type="text" id="habitName42"><br><br>
+
+      <label for="habit">Number of times per week: </label>
+      <input type="text" id="timesPerWeek42"><br><br>
+  
+      <div id="sectionOfCheckBoxes42">
+        <label><input type="checkbox" class="checkBoxes42" value = 0 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes42')">Sun</label>
+        <label><input type="checkbox" class="checkBoxes42" value = 1 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes42')">Mon</label>
+        <label><input type="checkbox" class="checkBoxes42" value = 2 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes42')">Tue</label>
+        <label><input type="checkbox" class="checkBoxes42" value = 3 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes42')">Wed</label>
+        <label><input type="checkbox" class="checkBoxes42" value = 4 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes42')">Thurs</label>
+        <label><input type="checkbox" class="checkBoxes42" value = 5 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes42')">Fri</label>
+        <label><input type="checkbox" class="checkBoxes42" value = 6 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes42')">Sat</label>
+      </div>
+
+      <br><br>
+      
+    </div>
+    
+    <h3>Habit 5 (0x23)</h3>
+
+    <p>Select an option</p>
+
+    <label>
+      <input type="radio" name="habitOptionH5" value="option1" onclick=showOption('5one')>Once Is Enough
+    </label>
+    <br>
+  
+    <label>
+      <input type="radio" name="habitOptionH5" value="option2" onclick=showOption('5two')>Weekly Quota
+    </label>
+    <br><br>
+  
+    <div id="optionOneH5" class="hidden">
+      <strong>You selected "Once Is Enough"</strong>
+
+      <br><br>
+      
+      <label for="habit">Habit Name:</label>
+      <input type="text" id="habitName51"><br><br>
+
+      <div id="sectionOfCheckBoxes51">
+        <label><input type="checkbox" class="checkBoxes51" value = 0 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes51')">Sun</label>
+        <label><input type="checkbox" class="checkBoxes51" value = 1 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes51')">Mon</label>
+        <label><input type="checkbox" class="checkBoxes51" value = 2 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes51')">Tue</label>
+        <label><input type="checkbox" class="checkBoxes51" value = 3 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes51')">Wed</label>
+        <label><input type="checkbox" class="checkBoxes51" value = 4 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes51')">Thurs</label>
+        <label><input type="checkbox" class="checkBoxes51" value = 5 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes51')">Fri</label>
+        <label><input type="checkbox" class="checkBoxes51" value = 6 onchange="limitCheckboxes(this, 2, 'sectionOfCheckBoxes51')">Sat</label>
+      </div>
+    
+      <br><br>
+    </div>
+  
+    <div id="optionTwoH5" class="hidden">
+      <strong>You selected "Weekly Quota"</strong>
+
+      <br><br>
+
+      <label for="habit">Habit Name:</label>
+      <input type="text" id="habitName52"><br><br>
+
+      <label for="habit">Number of times per week: </label>
+      <input type="text" id="timesPerWeek52"><br><br>
+  
+      <div id="sectionOfCheckBoxes52">
+        <label><input type="checkbox" class="checkBoxes52" value = 0 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes52')">Sun</label>
+        <label><input type="checkbox" class="checkBoxes52" value = 1 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes52')">Mon</label>
+        <label><input type="checkbox" class="checkBoxes52" value = 2 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes52')">Tue</label>
+        <label><input type="checkbox" class="checkBoxes52" value = 3 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes52')">Wed</label>
+        <label><input type="checkbox" class="checkBoxes52" value = 4 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes52')">Thurs</label>
+        <label><input type="checkbox" class="checkBoxes52" value = 5 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes52')">Fri</label>
+        <label><input type="checkbox" class="checkBoxes52" value = 6 onchange="limitCheckboxes(this, 1, 'sectionOfCheckBoxes52')">Sat</label>
+      </div>
+
+      <br><br>
+      
+    </div>
+
+    <button type="submit">Generate Code</button>
+  </form>
+
+  <br>
+
+  <button id="previewBtn" style="display:none;">Preview Code</button>
+  <button id="downloadBtn" style="display:none;">Download Code</button>
+
+  <pre id="previewCode" class="hidden"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
