@@ -652,13 +652,16 @@ document.getElementById("codeForm").addEventListener("submit", function (e) {
   document.getElementById("previewCode").classList.add("hidden");
 });
 
-document.getElementById("downloadBtn").addEventListener("click", function () {
-  const blob = new Blob([window.generatedCode], { type: "text/plain" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = "custom_code.ino";
-  a.click();
-});
+const downloadBtn = document.getElementById("downloadBtn");
+if (downloadBtn) {
+  downloadBtn.addEventListener("click", function() {
+    const blob = new Blob([window.generatedCode], { type: "text/plain" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "custom_code.ino";
+    a.click();
+  });
+}
 
 function showOption(selected) {
 
