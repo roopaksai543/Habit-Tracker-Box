@@ -647,9 +647,13 @@ document.getElementById("codeForm").addEventListener("submit", function (e) {
 
   window.generatedCode = finalCode;
 
-  document.getElementById("downloadBtn").style.display = "inline";
-  document.getElementById("previewBtn").style.display = "inline";
-  document.getElementById("previewCode").classList.add("hidden");
+  const downloadBtn = document.getElementById("downloadBtn");
+  const previewBtn = document.getElementById("previewBtn");
+  const previewCode = document.getElementById("previewCode");
+
+  if (downloadBtn) downloadBtn.classList.remove("hidden");
+  if (previewBtn) previewBtn.classList.remove("hidden");
+  if (previewCode) previewCode.classList.add("hidden");
 });
 
 const downloadBtn = document.getElementById("downloadBtn");
@@ -772,8 +776,9 @@ function generateCode() {
 
 document.getElementById("previewBtn").addEventListener("click", function () {
   const codeBlock = document.getElementById("previewCode");
+  if (!codeBlock) return;
   if (codeBlock.classList.contains("hidden")) {
-    codeBlock.innerText = window.generatedCode;
+    codeBlock.innerText = window.generatedCode || "";
     codeBlock.classList.remove("hidden");
     this.innerText = "Hide Preview";
   } 
