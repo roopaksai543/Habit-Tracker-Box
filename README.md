@@ -1,4 +1,4 @@
-# Habit-Tracker-Box
+# Habit Tracker Box 📦
 
 A hands-on habit tracker that helps you stay consistent with daily or weekly goals. Press a button when a task is done, and the screen shows your progress. You can set flexible goals, like doing something twice a week, and track how often you’ve completed them. Built for real-world routines.
 
