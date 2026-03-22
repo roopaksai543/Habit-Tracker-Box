@@ -149,5 +149,12 @@ Once the software is uploaded and your hardware is fully assembled, you can buil
 
 [Project Evolution and Changelog](projectEvolutionAndChangeLog/README.md)
 
-Built by **Roopaksai Sivakumar**  
-Computer Engineering @ UC Irvine
+
+<p align="center">
+  <sub>
+    <i>
+      Built by <b>Roopaksai Sivakumar</b><br>
+      Computer Engineering @ UC Irvine
+    </i>
+  </sub>
+</p>
